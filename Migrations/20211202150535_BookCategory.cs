@@ -11,7 +11,7 @@ namespace Cozma_Miruna_Lab8.Migrations
                 table: "Book",
                 type: "int",
                 nullable: false,
-                defaultValue: 0);
+                defaultValue: 0);       
 
             migrationBuilder.CreateTable(
                 name: "Category",
@@ -37,7 +37,7 @@ namespace Cozma_Miruna_Lab8.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Publisher", x => x.ID);
-                });
+                });  
 
             migrationBuilder.CreateTable(
                 name: "BookCategory",
@@ -68,7 +68,7 @@ namespace Cozma_Miruna_Lab8.Migrations
             migrationBuilder.CreateIndex(
                 name: "IX_Book_PublisherID",
                 table: "Book",
-                column: "PublisherID");
+                column: "PublisherID");  
 
             migrationBuilder.CreateIndex(
                 name: "IX_BookCategory_BookID",
@@ -86,7 +86,7 @@ namespace Cozma_Miruna_Lab8.Migrations
                 column: "PublisherID",
                 principalTable: "Publisher",
                 principalColumn: "ID",
-                onDelete: ReferentialAction.Cascade);
+                onDelete: ReferentialAction.Cascade);   
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)

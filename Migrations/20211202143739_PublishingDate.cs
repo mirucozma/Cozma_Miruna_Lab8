@@ -13,7 +13,7 @@ namespace Cozma_Miruna_Lab8.Migrations
                 type: "decimal(6,2)",
                 nullable: false,
                 oldClrType: typeof(decimal),
-                oldType: "decimal(18,2)");
+                oldType: "decimal(18,2)");    
 
             migrationBuilder.AddColumn<DateTime>(
                 name: "PublishingDate",
@@ -35,7 +35,7 @@ namespace Cozma_Miruna_Lab8.Migrations
                 type: "decimal(18,2)",
                 nullable: false,
                 oldClrType: typeof(decimal),
-                oldType: "decimal(6,2)");
+                oldType: "decimal(6,2)");  
         }
     }
 }
